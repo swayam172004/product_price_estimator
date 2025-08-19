@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
 def train_model():
-    df = pd.read_csv('data/products_200k.csv')
+    df = pd.read_csv('products_200k.csv')
     categorical = ['category', 'brand']
     numerical = ['weight_kg', 'rating', 'warranty_years', 'power_usage_watts', 'feature_score']
     target = 'price'
