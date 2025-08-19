@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
-from src.predict import train_model, predict_price
+from predict import train_model, predict_price
 
 st.title("💰 Product Price Estimator")
 
