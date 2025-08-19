@@ -29,7 +29,7 @@ def train_model():
     return score
 
 def predict_price(data_dict):
-    model, encoder, scaler = joblib.load('model/sklearn_price_model.pkl')
+    model, encoder, scaler = joblib.load('sklearn_price_model.pkl')
 
     cat_features = [[data_dict['category'], data_dict['brand']]]
     num_features = [[
